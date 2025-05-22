@@ -22,7 +22,7 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
- public class BlocServiceTest {
+  class BlocServiceTest {
     @Mock
     BlocRepository blocRepository;
     @Mock
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.*;
     BlocService blocService;
     @Test
     @Order(1)
-    public void testAddOrUpdate() {
+     void testAddOrUpdate() {
         Chambre chambre1 = new Chambre();
         chambre1.setNumeroChambre(101L);
         Chambre chambre2 = new Chambre();
