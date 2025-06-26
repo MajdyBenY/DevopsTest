@@ -1,9 +1,8 @@
-version: '2'
 services:
   sonarqube:
     image: sonarqube:8.9.7-community
     ports:
-      - "9000:9000"
+      - "9001:9000"   # <- changer le port hôte de 9000 à 9001
       - "9092:9092"
     volumes:
       - sonarqube_data:/opt/sonarqube/data
@@ -19,4 +18,4 @@ volumes:
   sonarqube_data:
   sonarqube_extensions:
   sonarqube_logs:
-  nexus_data: 
+  nexus_data:
