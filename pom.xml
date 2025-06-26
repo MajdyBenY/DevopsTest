@@ -45,13 +45,15 @@
       <version>1.18.28</version>
       <scope>provided</scope>
     </dependency>
-           <!-- JUnit 4 -->
+
+    <!-- JUnit 4 -->
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.13.2</version>
         <scope>test</scope>
     </dependency>
+
     <!-- MySQL Driver -->
     <dependency>
       <groupId>mysql</groupId>
@@ -59,6 +61,7 @@
       <version>8.0.33</version>
       <scope>runtime</scope>
     </dependency>
+
     <!-- H2 Database -->
     <dependency>
       <groupId>com.h2database</groupId>
@@ -136,5 +139,18 @@
 
     </plugins>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>nexus-releases</id>
+      <name>Nexus Release Repository</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <name>Nexus Snapshot Repository</name>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 
 </project>
